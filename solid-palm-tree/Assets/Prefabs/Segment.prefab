@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 54026242415612060}
   - component: {fileID: 59725305578180454}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Segment
   m_TagString: Tenticle Segment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

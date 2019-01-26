@@ -7,13 +7,23 @@ public class CameraFollowScript : MonoBehaviour {
     private Transform landerTransform;
     [SerializeField]
     private Vector3 positionOffset;
-
-	void Start () {
-        positionOffset = landerTransform.position - transform.position;
-	}
+    [SerializeField]
+    private Vector3 cameraPosOffset = new Vector3(0, -3, 7);
+    [SerializeField]
+    private Quaternion cameraRotOffset = Quaternion.Euler(18, 0, 0);
 
     void LateUpdate ()
     {
-        transform.position = landerTransform.position - positionOffset;
+        if (landerTransform != null)
+        {
+            transform.position = landerTransform.position - positionOffset;
+        }
+    }
+
+    public void InitOffsets (Transform landerTransform)
+    {
+        this.landerTransform = landerTransform;
+        positionOffset = landerTransform.position - transform.position;
+        transform.SetPositionAndRotation(transform.position + cameraPosOffset, cameraRotOffset);
     }
 }
