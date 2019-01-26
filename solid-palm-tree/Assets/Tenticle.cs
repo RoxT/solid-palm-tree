@@ -5,14 +5,12 @@ using UnityEngine;
 public class Tenticle : MonoBehaviour {
 
     private HingeJoint joint;
-    private JointMotor motor;
     private int collisionDebounce = 0;
 
 	// Use this for initialization
 	void Start () {
 
         joint = GetComponent<HingeJoint>();
-        motor = joint.motor;
 
     }
 	
@@ -39,11 +37,9 @@ public class Tenticle : MonoBehaviour {
         if (collisionDebounce <= 0)
         {
             JointMotor motor = joint.motor;
-            Debug.Log("1. targetVelocity : " + motor.targetVelocity);
             motor.targetVelocity = -joint.motor.targetVelocity;
             joint.motor = motor;
             collisionDebounce = 10;
-            Debug.Log("2. targetVelocity : " + motor.targetVelocity);
         }
 
     }
