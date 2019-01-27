@@ -60,7 +60,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 4d565c1f7a076924990349fe4893933c, type: 2}
+  - {fileID: 2100004, guid: eda6ca53d5c64d549b443b5ffaf9f120, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -129,10 +129,10 @@ SpringJoint:
   m_Spring: 10
   m_Damper: 0.2
   m_MinDistance: 0
-  m_MaxDistance: 0.3
+  m_MaxDistance: 0.1
   m_Tolerance: 0.025
-  m_BreakForce: 40
-  m_BreakTorque: 40
+  m_BreakForce: 20
+  m_BreakTorque: 20
   m_EnableCollision: 1
   m_EnablePreprocessing: 1
   m_MassScale: 1
