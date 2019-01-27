@@ -20,7 +20,13 @@ public class MainMenu : MonoBehaviour
     public void QuitGame()
     {
         //Use this to test if the application has succeded
-        Debug.Log("The Game is Finished");
         Application.Quit();
+    }
+
+    //Credits screen avaliable at the start
+    public void CreditsScene()
+    {
+        //Gets the PREVIOUS Scene in the queue
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 }
