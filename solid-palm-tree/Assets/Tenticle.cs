@@ -7,8 +7,8 @@ public class Tenticle : MonoBehaviour {
     private HingeJoint joint;
     private int collisionDebounce = 0;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 
         joint = GetComponent<HingeJoint>();
 
