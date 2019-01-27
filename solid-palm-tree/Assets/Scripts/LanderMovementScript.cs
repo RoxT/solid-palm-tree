@@ -14,6 +14,8 @@ public class LanderMovementScript : MonoBehaviour
     private ParticleSystem fire;
     private bool isFire;
     private AudioSource engineFlameSound;
+    [SerializeField]
+    private Transform cameraAnchor;
 
     void Start()
     {
@@ -30,7 +32,7 @@ public class LanderMovementScript : MonoBehaviour
     {
         Camera mainCamera = Camera.main;
         CameraFollowScript cfScript = mainCamera.gameObject.AddComponent<CameraFollowScript>();
-        cfScript.InitOffsets(transform);
+        cfScript.InitOffsets(cameraAnchor);
     }
 
     void Update()
@@ -58,12 +60,12 @@ public class LanderMovementScript : MonoBehaviour
         float hAxis = Input.GetAxis("Horizontal");
         if (hAxis != 0)
         {
-            rb.AddForce(new Vector3(hAxis * lateralMoveForce, 0, 0));
+            rb.AddForce(transform.right * hAxis * lateralMoveForce);
         }
         float vAxis = Input.GetAxis("Vertical");
         if (vAxis != 0)
         {
-            rb.AddForce(new Vector3(0, 0, vAxis * lateralMoveForce));
+            rb.AddForce(transform.forward * vAxis * lateralMoveForce);
         }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
