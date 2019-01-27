@@ -1,17 +1,22 @@
 fileFormatVersion: 2
-guid: 94cd1eb00daab6f43a566efa0e2c0ff1
+guid: 32a9a8a967a2c254e9ebc8cee313daca
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     100002: polySurface6
+    100004: plank2
     400000: //RootNode
     400002: polySurface6
+    400004: plank2
     2100000: woodMid
     2100002: woodLight
     2300000: polySurface6
+    2300002: plank2
     3300000: polySurface6
+    3300002: plank2
     4300000: polySurface6
+    4300002: plank2
   externalObjects: {}
   materials:
     importMaterials: 1

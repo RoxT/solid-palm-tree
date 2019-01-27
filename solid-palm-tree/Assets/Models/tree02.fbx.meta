@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5e336b9549e27a1459da2cbf12f48d57
+guid: 872398c57aaa2f347bc794c4fa1d61e4
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -23,6 +23,19 @@ ModelImporter:
     100034: transform7
     100036: transform8
     100038: transform9
+    100040: pCylinder9
+    100042: polySurface1
+    100044: polySurface4
+    100046: polySurface7
+    100048: polySurface77
+    100050: polySurface83
+    100052: polySurface84
+    100054: polySurface85
+    100056: polySurface86
+    100058: polySurface87
+    100060: transform10
+    100062: tree01
+    100064: tree02
     400000: pCone10
     400002: pCone11
     400004: pCone4
@@ -43,12 +56,33 @@ ModelImporter:
     400034: transform7
     400036: transform8
     400038: transform9
+    400040: pCylinder9
+    400042: polySurface1
+    400044: polySurface4
+    400046: polySurface7
+    400048: polySurface77
+    400050: polySurface83
+    400052: polySurface84
+    400054: polySurface85
+    400056: polySurface86
+    400058: polySurface87
+    400060: transform10
+    400062: tree01
+    400064: tree02
     2100000: spiderBlue
     2100002: midnightRed
     2100004: bloodRed
+    2100006: woodMid
+    2100008: woodLight
+    2100010: grassMid
+    2100012: grassDark
+    2100014: grassLight
     2300000: spider
+    2300002: tree02
     3300000: spider
+    3300002: tree02
     4300000: spider
+    4300002: tree02
   externalObjects: {}
   materials:
     importMaterials: 1
