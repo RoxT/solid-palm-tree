@@ -16,14 +16,13 @@ public class CameraFollowScript : MonoBehaviour {
     {
         if (landerTransform != null)
         {
-            transform.position = landerTransform.position - positionOffset;
+            transform.position = landerTransform.position - cameraPosOffset;
         }
     }
 
     public void InitOffsets (Transform landerTransform)
     {
         this.landerTransform = landerTransform;
-        positionOffset = landerTransform.position - transform.position;
         transform.SetPositionAndRotation(transform.position + cameraPosOffset, cameraRotOffset);
     }
 }
