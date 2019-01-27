@@ -16,6 +16,10 @@ public class LanderMovementScript : MonoBehaviour
     private AudioSource engineFlameSound;
     [SerializeField]
     private Transform cameraAnchor;
+    [SerializeField]
+    private float fuelLevel = 100f;
+    [SerializeField]
+    private float fuelBurnRate = 1f;
 
     void Start()
     {
@@ -45,6 +49,7 @@ public class LanderMovementScript : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             rb.AddForce(transform.up * upForce);
+            fuelLevel -= fuelBurnRate * Time.deltaTime;
             if (!isFire)
             {
                 fire.Play();
@@ -72,5 +77,10 @@ public class LanderMovementScript : MonoBehaviour
             transform.position = startPosition;
             transform.rotation = startRotation;
         }
+    }
+
+    public float GetFuelLevel ()
+    {
+        return fuelLevel/100f;
     }
 }

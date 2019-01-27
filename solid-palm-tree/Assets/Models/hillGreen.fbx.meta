@@ -1,18 +1,17 @@
 fileFormatVersion: 2
-guid: 3585855e4330f23489aa76cfc3b67a2d
+guid: 15a79e76e00083f499dd3f38f5b9ead9
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: HillGreen
-    100002: //RootNode
-    400000: HillGreen
-    400002: //RootNode
-    2100000: grassMid
-    2100002: woodDark
-    2100004: hillGreen
-    2300000: HillGreen
-    3300000: HillGreen
-    4300000: HillGreen
+    100000: //RootNode
+    100002: polySurface81
+    400000: //RootNode
+    400002: polySurface81
+    2100000: woodMid
+    2100002: woodLight
+    2300000: polySurface81
+    3300000: polySurface81
+    4300000: polySurface81
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -47,6 +46,7 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -71,6 +71,9 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:

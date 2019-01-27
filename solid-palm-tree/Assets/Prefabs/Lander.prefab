@@ -104,7 +104,7 @@ GameObject:
   - component: {fileID: 4137295957615448}
   - component: {fileID: 33039573309957182}
   - component: {fileID: 54284646653541018}
-  - component: {fileID: 114135977384391260}
+  - component: {fileID: 114476391616595280}
   m_Layer: 0
   m_Name: Lander
   m_TagString: Untagged
@@ -744,7 +744,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &114135977384391260
+--- !u!114 &114476391616595280
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -756,7 +756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upForce: 30
-  lateralMoveForce: 50
+  lateralMoveForce: 30
   cameraAnchor: {fileID: 4790557170675916}
 --- !u!153 &153123887847497900
 ConfigurableJoint:
