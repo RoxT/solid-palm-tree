@@ -24,10 +24,6 @@ public class LanderMovementScript : MonoBehaviour
     [SerializeField]
     private GameObject gameManager;
 
-    [SerializeField]
-    private GameObject fuelUI;
-    private BarScript fuelScript;
-
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody>();
@@ -37,7 +33,6 @@ public class LanderMovementScript : MonoBehaviour
         fire = transform.parent.GetComponentInChildren<ParticleSystem>();
         SetupCamera();
         engineFlameSound = transform.parent.GetComponentInChildren<AudioSource>();
-        fuelScript = fuelUI.GetComponent<BarScript>();
     }
 
     void SetupCamera ()
@@ -99,11 +94,6 @@ public class LanderMovementScript : MonoBehaviour
             transform.position = startPosition;
             transform.rotation = startRotation;
         }
-    }
-
-    public void SetFuelLevel ()
-    {
-        fuelScript.Value = fuelLevel;
     }
 
     public float GetFuelLevel()
