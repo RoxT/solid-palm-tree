@@ -1,18 +1,54 @@
 fileFormatVersion: 2
-guid: 525a3e14f5745694e966d62f64089503
+guid: 72c7be96b57d1457ba6d297c4ce0b29e
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: polySurface2
-    400000: //RootNode
-    400002: polySurface2
-    2100000: woodMid
-    2100002: woodLight
-    2300000: polySurface2
-    3300000: polySurface2
-    4300000: polySurface2
-    9500000: //RootNode
+    100000: pCone10
+    100002: pCone11
+    100004: pCone4
+    100006: pCone5
+    100008: pCone6
+    100010: pCone7
+    100012: pCone8
+    100014: pCone9
+    100016: pSphere1
+    100018: spider
+    100020: //RootNode
+    100022: transform1
+    100024: transform2
+    100026: transform3
+    100028: transform4
+    100030: transform5
+    100032: transform6
+    100034: transform7
+    100036: transform8
+    100038: transform9
+    400000: pCone10
+    400002: pCone11
+    400004: pCone4
+    400006: pCone5
+    400008: pCone6
+    400010: pCone7
+    400012: pCone8
+    400014: pCone9
+    400016: pSphere1
+    400018: spider
+    400020: //RootNode
+    400022: transform1
+    400024: transform2
+    400026: transform3
+    400028: transform4
+    400030: transform5
+    400032: transform6
+    400034: transform7
+    400036: transform8
+    400038: transform9
+    2100000: spiderBlue
+    2100002: midnightRed
+    2100004: bloodRed
+    2300000: spider
+    3300000: spider
+    4300000: spider
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -65,8 +101,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
-    hasPreviousCalculatedGlobalScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -93,7 +129,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
