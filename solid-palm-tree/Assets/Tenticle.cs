@@ -23,7 +23,7 @@ public class Tenticle : MonoBehaviour {
 	}
 
     private void OnCollision(Collision collision)
-    {
+    { 
             JointMotor motor = joint.motor;
             Debug.Log("1. targetVelocity : " + motor.targetVelocity);
             motor.targetVelocity = -joint.motor.targetVelocity;
