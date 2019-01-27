@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Tenticle Segment
   - CutterTrigger
+  - Effect
   layers:
   - Default
   - TransparentFX
@@ -42,4 +43,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Layer 1
+    uniqueID: 2334955311
     locked: 0
