@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class CuttableBranch : MonoBehaviour {
 
-    public Material glow;
-    private Material normalMaterial;
+
+    public Material[] glow;
+    private Material[] normalMaterials;
     private MeshRenderer meshRenderer;
     private bool cuttable;
     private Rigidbody branchRigidbody;
-
-
-	// Use this for initialization
-	void Start () {
+    
+    // Use this for initialization
+    void Start () {
         meshRenderer = GetComponent<MeshRenderer>();
-        normalMaterial = meshRenderer.material;
+        normalMaterials = meshRenderer.materials;
         cuttable = false;
         branchRigidbody = GetComponent<Rigidbody>();
         branchRigidbody.isKinematic = true;
@@ -22,10 +22,8 @@ public class CuttableBranch : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (cuttable == true && Input.GetKeyDown(KeyCode.X) == true)
+        if (cuttable == true && Input.GetKeyDown(KeyCode.X) == true)
         {
-            GetComponent<FixedJoint>().breakForce = 0;
-            GetComponent<FixedJoint>().breakTorque = 0;
             branchRigidbody.isKinematic = false;
         }
 	}
@@ -34,7 +32,7 @@ public class CuttableBranch : MonoBehaviour {
     {
         if (other.gameObject.tag == "CutterTrigger")
         {
-            meshRenderer.material = glow;
+            meshRenderer.materials = glow;
             cuttable = true;
         }
     }
@@ -43,7 +41,7 @@ public class CuttableBranch : MonoBehaviour {
     {
         if (other.gameObject.tag == "CutterTrigger")
         {
-            meshRenderer.material = normalMaterial;
+            meshRenderer.materials = normalMaterials;
             cuttable = false;
         }
     }
