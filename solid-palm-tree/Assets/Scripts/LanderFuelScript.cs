@@ -15,7 +15,7 @@ public class LanderFuelScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        fillImage = GetComponent<Image>();
+        fillImage = gameObject.GetComponent<Image>();
         lms = lander.GetComponentInChildren<LanderMovementScript>();
 	}
 	
@@ -23,5 +23,7 @@ public class LanderFuelScript : MonoBehaviour {
 	void Update () {
         fuelLevel = lms.GetFuelLevel();
         fillImage.fillAmount = fuelLevel;
+        //fillImage.fillAmount -= .1f;
+        //Debug.Log(fillImage.fillAmount);
     }
 }

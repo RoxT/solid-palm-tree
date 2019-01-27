@@ -7,13 +7,13 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/MenuSaved.unity
-    guid: 73829fb9deb5d1644a41df23aaefd2fc
+    guid: b20be45e4fcdb3b40a7d206215bcb9ce
   - enabled: 1
     path: Assets/Scenes/InstructionsREDONE.unity
     guid: 458621867ff1d7d4b82efa4f1637ad91
   - enabled: 1
-    path: Assets/Scenes/Main.unity
-    guid: 25de04ca6436dbb45b6c8dc825ef6069
+    path: Assets/Scenes/LanderDebugScene.unity
+    guid: b88338183a6e5334eb73f6a003772297
   - enabled: 1
     path: Assets/Scenes/Ending.unity
     guid: 244765a1a76a9ba42b6b5f83b0fe0233
