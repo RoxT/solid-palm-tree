@@ -13,6 +13,7 @@ public class LanderMovementScript : MonoBehaviour
     private Quaternion startRotation;
     private ParticleSystem fire;
     private bool isFire;
+    private AudioSource engineFlameSound;
 
     void Start()
     {
@@ -22,6 +23,7 @@ public class LanderMovementScript : MonoBehaviour
         rb.centerOfMass = rb.centerOfMass - new Vector3(0, 1, 0);
         fire = transform.parent.GetComponentInChildren<ParticleSystem>();
         SetupCamera();
+        engineFlameSound = transform.parent.GetComponentInChildren<AudioSource>();
     }
 
     void SetupCamera ()
@@ -44,13 +46,15 @@ public class LanderMovementScript : MonoBehaviour
             if (!isFire)
             {
                 fire.Play();
+                engineFlameSound.Play();
                 isFire = true;
             }
-        } else
-        {
+        } else {
             fire.Stop();
+            engineFlameSound.Stop();
             isFire = false;
         }
+
         float hAxis = Input.GetAxis("Horizontal");
         if (hAxis != 0)
         {
