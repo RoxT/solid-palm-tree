@@ -156,7 +156,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4949655246624820}
   m_Layer: 0
-  m_Name: CompB
+  m_Name: CutB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
