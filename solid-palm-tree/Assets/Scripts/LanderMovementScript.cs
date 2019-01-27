@@ -19,7 +19,14 @@ public class LanderMovementScript : MonoBehaviour
     [SerializeField]
     private float fuelLevel = 100f;
     [SerializeField]
-    private float fuelBurnRate = 1f;
+    private float fuelBurnRate = 10f;
+    private bool hasTriggeredOutOfFuel = false;
+    [SerializeField]
+    private GameObject gameManager;
+
+    [SerializeField]
+    private GameObject fuelUI;
+    private BarScript fuelScript;
 
     void Start()
     {
@@ -30,6 +37,7 @@ public class LanderMovementScript : MonoBehaviour
         fire = transform.parent.GetComponentInChildren<ParticleSystem>();
         SetupCamera();
         engineFlameSound = transform.parent.GetComponentInChildren<AudioSource>();
+        fuelScript = fuelUI.GetComponent<BarScript>();
     }
 
     void SetupCamera ()
@@ -41,7 +49,21 @@ public class LanderMovementScript : MonoBehaviour
 
     void Update()
     {
-        HandleInput();
+        if (fuelLevel > 0)
+        {
+            HandleInput();
+        }
+        else
+        {
+            if (!hasTriggeredOutOfFuel)
+            {
+                TriggerOutOfFuel();
+                fire.Stop();
+                engineFlameSound.Stop();
+                isFire = false;
+            }
+            hasTriggeredOutOfFuel = true;
+        }
     }
 
     void HandleInput()
@@ -79,8 +101,18 @@ public class LanderMovementScript : MonoBehaviour
         }
     }
 
-    public float GetFuelLevel ()
+    public void SetFuelLevel ()
     {
-        return fuelLevel/100f;
+        fuelScript.Value = fuelLevel;
+    }
+
+    public float GetFuelLevel()
+    {
+        return fuelLevel / 100f;
+    }
+
+    public void TriggerOutOfFuel()
+    {
+        gameManager.GetComponent<GameManagerScript>().LanderOutOfFuel();
     }
 }
