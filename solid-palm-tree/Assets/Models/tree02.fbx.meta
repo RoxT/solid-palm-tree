@@ -1,20 +1,20 @@
 fileFormatVersion: 2
-guid: 872398c57aaa2f347bc794c4fa1d61e4
+guid: 5e336b9549e27a1459da2cbf12f48d57
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: pCylinder9
-    100002: polySurface1
-    100004: polySurface4
-    100006: polySurface7
-    100008: polySurface77
-    100010: polySurface83
-    100012: polySurface84
-    100014: polySurface85
-    100016: polySurface86
-    100018: polySurface87
-    100020: transform1
-    100022: transform10
+    100000: pCone10
+    100002: pCone11
+    100004: pCone4
+    100006: pCone5
+    100008: pCone6
+    100010: pCone7
+    100012: pCone8
+    100014: pCone9
+    100016: pSphere1
+    100018: spider
+    100020: //RootNode
+    100022: transform1
     100024: transform2
     100026: transform3
     100028: transform4
@@ -23,21 +23,18 @@ ModelImporter:
     100034: transform7
     100036: transform8
     100038: transform9
-    100040: tree01
-    100042: tree02
-    100044: //RootNode
-    400000: pCylinder9
-    400002: polySurface1
-    400004: polySurface4
-    400006: polySurface7
-    400008: polySurface77
-    400010: polySurface83
-    400012: polySurface84
-    400014: polySurface85
-    400016: polySurface86
-    400018: polySurface87
-    400020: transform1
-    400022: transform10
+    400000: pCone10
+    400002: pCone11
+    400004: pCone4
+    400006: pCone5
+    400008: pCone6
+    400010: pCone7
+    400012: pCone8
+    400014: pCone9
+    400016: pSphere1
+    400018: spider
+    400020: //RootNode
+    400022: transform1
     400024: transform2
     400026: transform3
     400028: transform4
@@ -46,17 +43,12 @@ ModelImporter:
     400034: transform7
     400036: transform8
     400038: transform9
-    400040: tree01
-    400042: //RootNode
-    400044: tree02
-    2100000: woodMid
-    2100002: woodLight
-    2100004: grassMid
-    2100006: grassDark
-    2100008: grassLight
-    2300000: tree02
-    3300000: tree02
-    4300000: tree02
+    2100000: spiderBlue
+    2100002: midnightRed
+    2100004: bloodRed
+    2300000: spider
+    3300000: spider
+    4300000: spider
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -91,6 +83,7 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -115,6 +108,9 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
@@ -129,7 +125,6 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
