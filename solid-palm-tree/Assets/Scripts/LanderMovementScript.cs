@@ -11,6 +11,8 @@ public class LanderMovementScript : MonoBehaviour
     private float lateralMoveForce = 10f;
     private Vector3 startPosition;
     private Quaternion startRotation;
+    private ParticleSystem fire;
+    private bool isFire;
 
     void Start()
     {
@@ -18,6 +20,7 @@ public class LanderMovementScript : MonoBehaviour
         startPosition = transform.position;
         startRotation = transform.rotation;
         rb.centerOfMass = rb.centerOfMass - new Vector3(0, 1, 0);
+        fire = transform.parent.GetComponentInChildren<ParticleSystem>();
         SetupCamera();
     }
 
@@ -38,6 +41,15 @@ public class LanderMovementScript : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             rb.AddForce(transform.up * upForce);
+            if (!isFire)
+            {
+                fire.Play();
+                isFire = true;
+            }
+        } else
+        {
+            fire.Stop();
+            isFire = false;
         }
         float hAxis = Input.GetAxis("Horizontal");
         if (hAxis != 0)
