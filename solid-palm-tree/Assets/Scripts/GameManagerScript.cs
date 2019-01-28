@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManagerScript : MonoBehaviour
 {
     [SerializeField]
-    private int finalSceneIndex = 3;
+    private int finalSceneIndex = 4;
     [SerializeField]
     private Camera wideViewCamera;
     [SerializeField]
@@ -29,7 +29,7 @@ public class GameManagerScript : MonoBehaviour
             {
                 // Delay until trees finish display
                 // Transition to final scene
-                SceneManager.LoadScene(3);
+                SceneManager.LoadScene(finalSceneIndex);
             } else
             {
                 endToTransitionTime -= Time.deltaTime;
