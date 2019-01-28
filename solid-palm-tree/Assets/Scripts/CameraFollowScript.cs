@@ -5,12 +5,6 @@ using UnityEngine;
 public class CameraFollowScript : MonoBehaviour {
     [SerializeField]
     private Transform landerTransform;
-    [SerializeField]
-    private Vector3 positionOffset;
-    [SerializeField]
-    private Vector3 cameraPosOffset = new Vector3(0, -3, 7);
-    [SerializeField]
-    private Quaternion cameraRotOffset = Quaternion.Euler(18, 0, 0);
 
     void LateUpdate ()
     {

@@ -5576,7 +5576,7 @@ PrefabInstance:
     - target: {fileID: 4195011643634492043, guid: 24b5074b02e431c4393912d790f931fb,
         type: 3}
       propertyPath: fuelBurnRate
-      value: 10
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 4195011643634492043, guid: 24b5074b02e431c4393912d790f931fb,
         type: 3}
@@ -5598,5 +5598,10 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.z
       value: -0.0000021464157
       objectReference: {fileID: 0}
+    - target: {fileID: 4216858217638958919, guid: 24b5074b02e431c4393912d790f931fb,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6530995de92abfa4e9df5391e8dbd957, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24b5074b02e431c4393912d790f931fb, type: 3}

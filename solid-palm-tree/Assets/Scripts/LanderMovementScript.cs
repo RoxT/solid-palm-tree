@@ -78,6 +78,10 @@ public class LanderMovementScript : MonoBehaviour
             engineFlameSound.Stop();
             isFire = false;
         }
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            rb.AddForce(-transform.up * upForce);
+        }
 
         float hAxis = Input.GetAxis("Horizontal");
         if (hAxis != 0)
